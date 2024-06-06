@@ -41,8 +41,8 @@ require_once("conexion.php");
 if($accion == "add_candle"){
   switch ($id):
     case 1:
-      echo "llegamos a modelo";
       addPrueba();
+    echo "index.html";
 }
 
 >
