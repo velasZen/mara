@@ -16,10 +16,6 @@
   if($accion == "add_candle"){
     switch ($id):
       case 1:
-        return addPrueba();
+        echo addPrueba();
   }
-
-  
-
-
 ?>
