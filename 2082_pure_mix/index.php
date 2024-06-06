@@ -12,11 +12,11 @@
 	} else {
 		$id = 1;
 	}
-
-  if($accion == "add_candle"){
-    switch ($id):
-      case 1:
-	    addPrueba();
-	    break;
-  }
+echo $accio;
+if($accion == "add_candle"){
+	switch ($id):
+	case 1:
+	addPrueba();
+	break;
+}
 ?>
