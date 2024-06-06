@@ -1,5 +1,5 @@
 <?php
-  require_once(modelo.php);
+  include "modelo.php";
 
   if (isset($_GET['accion'])) {
 		$accion = $_GET['accion'];
