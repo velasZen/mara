@@ -32,17 +32,16 @@ require_once("conexion.php");
   	$stmt->execute();
   
   	if ($stmt->affected_rows) {
-  		echo "Se ha insertado correctamente<br>";
+  		return "Se ha insertado correctamente<br>";
   	} else {
-  		echo "No se ha insertado la persona<br>";
+  		return "No se ha insertado la persona<br>";
   	}
     
   }
 if($accion == "add_candle"){
   switch ($id):
     case 1:
-      addPrueba();
-      echo "hola";
+      return addPrueba();
 }
 
 >
