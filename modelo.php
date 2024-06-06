@@ -24,11 +24,11 @@ require_once("conexion.php");
 
   function addPrueba(){
     $con = conexion();
-  	$stmt = $con->prepare("insert into PRUEBA (nombre) values (?)");
-  	$stmt->bind_param("s", $nom);
-  
+  	$stmt = $con->prepare("insert into PRUEBA (id,nombre) values (?,?)");
+  	$stmt->bind_param("ds",$id, $nom);
+    $id = 0;
   	$nom = $_GET['name'];
-  
+    
   	$stmt->execute();
   
   	if ($stmt->affected_rows) {
