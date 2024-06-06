@@ -42,7 +42,7 @@ if($accion == "add_candle"){
   switch ($id):
     case 1:
       addPrueba();
-    echo "index.html";
+      echo "hola";
 }
 
 >
