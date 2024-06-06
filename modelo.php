@@ -38,7 +38,7 @@ require_once("conexion.php");
   	}
     
   }
-if($accion == "add_prueba"){
+if($accion == "add_candle"){
   switch ($id):
     case 1:
       addPrueba();
