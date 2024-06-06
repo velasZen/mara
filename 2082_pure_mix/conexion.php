@@ -6,7 +6,7 @@
 		$user = "root";
 		$password = "FugGrCWZSpKXmhJjhjlZbJVwixjNHGzm";
 
-		$con = mysqli_connect($servidor, $user, $password, $bd);
+		$con = mysqli($servidor, $user, $password, $bd);
 
 		if (!$con) {
 			echo "Error de conexión de base de datos <br>";
