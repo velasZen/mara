@@ -32,9 +32,9 @@ include "conexion.php";
   	$stmt->execute();
   
   	if ($stmt->affected_rows) {
-  		return "Se ha insertado correctamente<br>";
+  		echo "Se ha insertado correctamente<br>";
   	} else {
-  		return "No se ha insertado la persona<br>";
+  		echo "No se ha insertado la persona<br>";
   	}
     
   }
