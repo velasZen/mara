@@ -22,5 +22,22 @@ require_once("conexion.php");
     
   }
 
+  function addPrueba(){
+    $con = conexion();
+  	$stmt = $con->prepare("insert into PRUEBA (name) values (?)");
+  	$stmt->bind_param("s", $nom);
+  
+  	$nom = $_POST['name'];
+  
+  	$stmt->execute();
+  
+  	if ($stmt->affected_rows) {
+  		echo "Se ha insertado correctamente<br>";
+  	} else {
+  		echo "No se ha insertado la persona<br>";
+  	}
+    
+  }
+
 
 >
