@@ -17,5 +17,6 @@
     switch ($id):
       case 1:
         echo addPrueba();
+	    break;
   }
 ?>
