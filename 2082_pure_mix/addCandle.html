@@ -48,7 +48,7 @@ http://www.tooplate.com/view/2082-pure-mix
 			$.ajax({
 			url:"../modelo.php?accion=add_candle&id=1&name=" + name,
 			success: function (resultado) {
-				alert("inserted okey")
+				alert("inserted okey" + name);
 			},
 			error: function () {
 				alert("Se ha producido un error");
