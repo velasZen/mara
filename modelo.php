@@ -38,6 +38,10 @@ require_once("conexion.php");
   	}
     
   }
-
+if($accion == "add_prueba"){
+  switch ($id):
+    case 1:
+      addPrueba();
+}
 
 >
