@@ -27,7 +27,7 @@ require_once("conexion.php");
   	$stmt = $con->prepare("insert into PRUEBA (name) values (?)");
   	$stmt->bind_param("s", $nom);
   
-  	$nom = $_POST['name'];
+  	$nom = $_GET['name'];
   
   	$stmt->execute();
   
