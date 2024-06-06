@@ -1,5 +1,5 @@
 <?php
-require_once("conexion.php");
+include "conexion.php";
   function addCandle(){
     $con = conexion();
   	$stmt = $con->prepare("insert into CANDLES (name, price, height, weight, type, description) values (?,?,?,?,?,?)");
