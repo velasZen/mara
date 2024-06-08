@@ -38,22 +38,20 @@ http://www.tooplate.com/view/2082-pure-mix
 	<!-- Google web font 
    ================================================== -->	
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
     <script>
 	function addPrueba() {
-			var name = $("#name").val();
-			if(typeof name === 'undefined'){
-				name = "a";
-			}
-			$.ajax({
-			url:"index.php?accion=add_candle&id=1&name=" + name,
-			success: function (resultado) {
-				alert("inserted okey" + resultado);
-			},
-			error: function () {
-				alert("Se ha producido un error");
-			}
-		})
+		var name = $("#name").val();
+		if(typeof name === 'undefined'){
+			name = "a";
+		}
+		var xhr = new XMLHttpRequest();
+	        xhr.open("POST", "https://velaszen.github.io/mara/index.php", true);
+	        xhr.onreadystatechange = function () {
+	                var responseData = (xhr.responseText);
+	                console.log(responseData);
+	            }
+	        };
 	}
     </script>
 </head>
