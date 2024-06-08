@@ -4,7 +4,7 @@
 		$servidor = "viaduct.proxy.rlwy.net";
 		$bd = "railwey";
 		$user = "root";
-		$password = "FugGrCWZSpKXmhJjhjlZbJVwixjNHGzm";
+		$password = "KxoGxPEsSlVZvKLUXLWANkPkXvHtEfSN";
 
 		$con = mysqli($servidor, $user, $password, $bd);
 
