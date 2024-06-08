@@ -24,9 +24,8 @@ include "conexion.php";
 
   function addPrueba(){
     $con = conexion();
-  	$stmt = $con->prepare("insert into PRUEBA (id,nombre) values (?,?)");
-  	$stmt->bind_param("ds",$id, $nom);
-    $id = 0;
+  	$stmt = $con->prepare("insert into PRUEBA (nombre) values (?)");
+  	$stmt->bind_param("s", $nom);
   	$nom = $_GET['name'];
     
   	$stmt->execute();
